@@ -38,7 +38,7 @@ parser.add_argument(
 user_args = parser.parse_args()
 
 ## ------------------------------ DEFAULTS ------------------------------
-
+#ENHANCE = user_args.enhance
 USE_COLAB = user_args.colab
 USE_CUDA = user_args.cuda
 DEF_OUTPUT_PATH = user_args.out_dir
@@ -69,7 +69,7 @@ MASK_ERODE_AMOUNT = 0.15
 
 FACE_SWAPPER = None
 FACE_ANALYSER = None
-FACE_ENHANCER = None
+FACE_ENHANCER = user_args.enhance
 FACE_PARSER = None
 NSFW_DETECTOR = None
 FACE_ENHANCER_LIST = ["NONE"]
